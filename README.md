@@ -31,3 +31,4 @@ npm run build
 #### 5.提示
 
 ![](https://user-gold-cdn.xitu.io/2018/7/10/164821a53a3c97e2?w=374&h=124&f=png&s=4465)
+# vue-el-tree
