@@ -1,0 +1,95 @@
+
+.ly-tree-container {
+  margin: 20px 0 20px 20px;
+  width: 60%;
+  padding: 20px;
+
+  span {
+    font-size: 14px;
+  }
+
+  .el-tree > .el-tree-node > .el-tree-node__content:first-child {
+    &::before,
+    &::after {
+      border: none;
+    }
+  }
+
+  .ly-visible {
+    margin-left: 50px;
+    visibility: hidden;
+  }
+
+  .ly-edit__text {
+    width: 25%;
+    height: 25px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    color: #666;
+    text-indent: 10px;
+  }
+
+  .ly-tree__loading {
+    color: #666;
+    font-weight: bold;
+  }
+
+  .ly-tree-node {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    justify-content: flex-start;
+    font-size: 14px;
+    padding-right: 8px;
+  }
+
+  .ly-tree-node > div > span:last-child {
+    display: inline-block;
+    width: 110px;
+    text-align: left;
+  }
+
+  .ly-tree-node > span:last-child {
+    display: inline-block;
+    width: 110px;
+    text-align: left;
+  }
+
+  .el-tree-node .el-tree-node__content {
+    height: 30px;
+
+    &:hover .ly-visible {
+      visibility: visible;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      right: auto;
+    }
+
+    &::before {
+      border-left: 1px solid #e6e6e6;
+      bottom: 50px;
+      height: 100%;
+      top: 0;
+      width: 1px;
+      margin-left: -5px;
+      margin-top: -15px;
+    }
+
+    &::after {
+      border-top: 1px solid #e6e6e6;
+      height: 20px;
+      top: 14px;
+      width: 10px;
+      margin-left: -5px;
+    }
+  }
+
+  .el-tree .el-tree-node {
+    position: relative;
+  }
+}
